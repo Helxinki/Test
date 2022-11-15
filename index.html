@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Flex</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        width: 90vh;
+
+        background-color: #eee;
+      }
+      /* * {
+        border: 2px solid black;
+      } */
+      .flexr {
+        display: flex;
+      }
+      .flexc {
+        display: flex;
+        flex-direction: column;
+      }
+      .red {
+        background-color: rgb(222, 36, 23);
+        border: 5px solid black;
+      }
+      .blue {
+        background-color: rgb(41, 114, 181);
+        border: 5px solid rgb(11, 11, 11);
+      }
+      .white {
+        background-color: rgb(229, 220, 189);
+        border: 5px solid black;
+      }
+      .black {
+        background-color: black;
+        border: 5px solid black;
+      }
+      .yellow {
+        background-color: rgb(235, 206, 42);
+        border: 5px solid black;
+      }
+    </style>
+  </head>
+  <body class="flexr">
+    <!-- left side -->
+    <div style="flex: 1" class="flexc">
+      <div style="flex: 1" class="flexc yellow"></div>
+      <div style="flex: 4.9" class="flexc white"></div>
+    </div>
+
+    <!-- right side -->
+    <div style="flex: 19" class="flexc">
+      <!-- right up -->
+      <div style="flex: 1.5" class="flexr">
+        <!-- up left -->
+        <div style="flex: 1" class="flexc">
+          <!-- up -->
+          <div style="flex: 1" class="flexr red"></div>
+          <!-- down -->
+          <div style="flex: 2.5" class="flexr blue"></div>
+        </div>
+        <!-- up right -->
+        <div style="flex: 1.5" class="flexr">
+          <!-- right left -->
+          <div style="flex: 1" class="flexc">
+            <!-- up -->
+            <div style="flex: 1" class="flexr white"></div>
+            <!-- down -->
+            <div style="flex: 2.5" class="flexr black"></div>
+          </div>
+          <!-- right right -->
+          <div style="flex: 2" class="flexc">
+            <!-- up -->
+            <div style="flex: 1" class="flexr white"></div>
+            <!-- middle -->
+            <div style="flex: 5" class="flexr yellow"></div>
+            <!-- down -->
+            <div style="flex: 3" class="flexr">
+              <!-- left -->
+              <div style="flex: 2" class="flexr white"></div>
+              <!-- right -->
+              <div style="flex: 1" class="flexr black"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- right down -->
+      <div style="flex: 1" class="flexr">
+        <!-- down left -->
+        <div style="flex: 1" class="flexc">
+          <!-- up -->
+          <div style="flex: 1" class="white"></div>
+          <!-- down -->
+          <div style="flex: 4.5" class="white"></div>
+        </div>
+        <!-- down right -->
+        <div style="flex: 1.5" class="flexc">
+          <!-- up -->
+          <div style="flex: 1.5" class="flexr">
+            <!-- left -->
+            <div style="flex: 1.5" class="red"></div>
+            <!-- left -->
+            <div style="flex: 2" class="red"></div>
+            <!-- left -->
+            <div style="flex: 1" class="black"></div>
+          </div>
+          <!-- down -->
+          <div style="flex: 1" class="flexr">
+            <!-- left -->
+            <div style="flex: 2.5" class="blue"></div>
+            <!-- left -->
+            <div style="flex: 1" class="white"></div>
+            <!-- left -->
+            <div style="flex: 1" class="white"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
